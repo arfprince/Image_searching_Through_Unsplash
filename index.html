@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/style.css" rel="stylesheet">
 </head>
-<body class="bg-slate-400">
-    <main class="text-center mx-auto">
-        <h1 class=" text-4xl text-slate-800"> Image search App </h1>
-
-        <div id="container" class="flex items-center justify-center w-[30%]">
-            
+<body class="bg-slate-100 text-center font-serif">
+    <header class="bg-black p-5">
+        <h1 class=" text-4xl text-slate-200 py-4"> Search Your Favourite Iamges </h1>
+        <form id="form">
+            <input id="search-input" type="text" placeholder="Search your images..." class="text-sm h-10 w-42 rounded-md" required>
+            <button type="submit" class="bg-black text-white m-2 border-solid border-white border-2 h-10 w-20 text-sm rounded-md hover:bg-white hover:text-black">Search</button>
+        </form>
+    </header>
+    <main class="text-center">
+        <div id="catList" class="flex flex-wrap p-4 m-auto">
         </div>
     </main>
-
+    <footer class="m-10">
+        <button id="more" class="h-10 w-32 bg-black rounded-md text-md text-white hover:bg-white hover:text-black hidden">Show more</button>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

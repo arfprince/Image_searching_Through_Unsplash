@@ -1,0 +1,10 @@
+.imageStyle{
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+}
+.newDiv{
+    width: 33%;
+    height: 300px;
+    padding: 4px;
+}
